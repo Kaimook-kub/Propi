@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS_SWU คับผม</title>
+    <link rel="icon" type="image/png" href="homepage_pic/Srinakharinwirot_Logo_EN_Color.png">
+    <link rel="shortcut icon" href="homepage_pic/Srinakharinwirot_Logo_EN_Color.png">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Prompt:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <a href="https://swu.ac.th/" target="_blank">
+                <img src="homepage_pic/SWU_Logo_TH_Color.png" alt="โลโก้ มศว" class="logo-img">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#home">หน้าแรก</a>
+            <a href="#news">ประชาสัมพันธ์</a>
+            <a href="#teacher">บุคลากร</a>
+        </div>
+        <div class="news-slider-wrapper" style="text-align: right; padding: 20px;">
+            <a href="login.php" style="text-decoration: none;">
+            <button type="button" class="login-btn" style="cursor: pointer;">
+            เข้าสู่ระบบ <i class="fa-regular fa-circle-right"></i>
+            </button>
+        </a>
+        </div>
+    </header>
+<!-- NAVBAR END -->
+
+<!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="hero-box">
+            
+            <div class="glass-card">
+                <h2>หลักสูตรที่เปิดสอน</h2>
+                <p>
+                    หลักสูตรศิลปศาสตรบัณฑิต สาขาวิชาสารสนเทศศึกษา<br>
+                    (Bachelor of Arts Program in Information Studies)<br><br>
+                    <b>ชื่อปริญญาภาษาไทย:</b><br>
+                    ศิลปศาสตรบัณฑิต (สารสนเทศศึกษา) <br>
+                    ศศ.บ. (สารสนเทศศึกษา)<br><br>
+                    <b>ชื่อปริญญาภาษาอังกฤษ:</b><br>
+                    Bachelor of Arts (Information Studies)<br>
+                    B.A. (Information Studies)
+                </p>
+                <a href="homepage_pic/ปรัชญาสารสนเทศ.pdf" target="_blank" class="btn-blue">READ MORE</a>
+            </div>
+            
+        </div>
+    </section>
+<!-- HERO SECTION END -->
+
+<!-- MAIN SLIDER -->
+    <div class="welcome-container" id="home">
+        <h2 class="welcome-title">WELCOME TO <span>IS . SWU</span></h2>
+        <div class="title-line"></div>
+    </div>
+    <section class="slider-container main-slider" >
+        <button class="slider-btn prev-btn" onclick="moveSlide('main', -1)">&#10094;</button>
+        <div class="slider-track" id="main-track">
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/สไลด์1.jpg" alt="สไลด์ 1"></div>
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/2.jpg" alt="สไลด์ 2"></div>
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/3.jpg" alt="สไลด์ 3"></div>
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/4.jpg" alt="สไลด์ 4"></div>
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/5.jpg" alt="สไลด์ 5"></div>
+            <div class="slide"><img src="homepage_pic/สไลด์รูปต้อนรับ/6.jpg" alt="สไลด์ 6"></div>
+        </div>
+        <button class="slider-btn next-btn" onclick="moveSlide('main', 1)">&#10095;</button>
+    </section>
+    <!-- MAIN SLIDER END -->
+     
+    <!-- NEWS SLIDER -->
+<section class="news-section" id="news">
+    
+    <div class="news-header">
+        <hr class="dotted-line">
+        <h2 class="news-title">ข่าวประชาสัมพันธ์</h2>
+        <hr class="dotted-line">
+    </div>
+
+    <div class="news-slider-wrapper">
+        <button class="news-btn prev-news">❮</button>
+        
+        <div class="news-slider-container" id="newsContainer">
+            <div class="news-track">
+                
+                <div class="news-card">
+                    <div class="news-badge">SCHOLARSHIP</div>
+                    <div class="news-image">
+                        <img src="homepage_pic/News Slides/1.jpg" alt="รูปกิจกรรม 1"> 
+                    </div>
+                    <div class="news-content">
+                        <h3>ทุนโครงการ ERIA School of Government Fellowship Programme รุ่นที่ 2 (ประจำปี ค.ศ. 2026-2027)</h3>
+                        <p><strong>ระยะเวลา:</strong> 9 เมษายน 2569 - 9 พฤษภาคม 2569</p>
+                        <p><strong>สถานที่:</strong> กรุงจาการ์ตา สาธารณรัฐอินโดนีเซีย</p>
+                        <p class="news-desc">เพื่อสนับสนุนการทำวิจัยเกี่ยวกับนโยบายสาธารณะที่เกี่ยวข้องกับอาเซียนและภูมิภาคเอเชียตะวันออก</p>
+                    </div>
+                </div> 
+
+                <div class="news-card">
+                    <div class="news-badge">WORKSHOP</div>
+                    <div class="news-image">
+                        <img src="homepage_pic/News Slides/2.jpg" alt="รูปกิจกรรม 2"> 
+                    </div>
+                    <div class="news-content">
+                        <h3>การอบรมเชิงปฏิบัติการว่าด้วยการสร้างนวัตกรรมท้องถิ่นจากซอฟต์เพาเวอร์ โดยกระบวนการมนุษยศาสตร์ดิจิทัล (Digital Humanities)</h3>
+                        <p><strong>ระยะเวลา:</strong> 23 มกราคม 2568</p>
+                        <p><strong>สถานที่:</strong> อบต.บ้านช้าง และ รร.บ้านช้าง จ.พระนครศรีอยุธยา</p>
+                        <p class="news-desc">กิจกรรมจัดขึ้นเพื่อพัฒนาศักยภาพประชาชนและเยาวชนในพื้นที่ โดยถ่ายทอดความรู้ด้านการจัดการนวัตกรรมท้องถิ่น</p>
+                    </div>
+                </div> 
+
+                <div class="news-card">
+                    <div class="news-badge">TRAINING</div>
+                    <div class="news-image">
+                        <img src="homepage_pic/News Slides/3.jpg" alt="รูปกิจกรรม 3"> 
+                    </div>
+                    <div class="news-content">
+                        <h3>โครงการอบรมทักษะ Low-code/No-code (n8n)</h3>
+                        <p><strong>ระยะเวลา:</strong> 15 และ 18 ธันวาคม 2569</p>
+                        <p><strong>สถานที่:</strong> (รอระบุสถานที่)</p>
+                        <p class="news-desc">อบรมทักษะการออกแบบและสร้าง Workflow ด้วย n8n สำหรับนิสิตชั้นปีที่ 3 โดย ผศ.ดร.ธนากร อุยพานิชย์</p>
+                    </div>
+                </div> 
+
+                <div class="news-card">
+                    <div class="news-badge">WORKSHOP</div>
+                    <div class="news-image">
+                        <img src="homepage_pic/News Slides/652631956_1604029914180562_7990886178137577598_n.jpg" alt="รูปกิจกรรม 4"> 
+                    </div>
+                    <div class="news-content">
+                        <h3>โครงการพัฒนาระบบสารสนเทศเพื่อการบริหารจัดการองค์กร</h3>
+                        <p><strong>ระยะเวลา:</strong> 16 มีนาคม 2569</p>
+                        <p><strong>สถานที่:</strong> ห้อง 38-0301 ชั้น 3 อาคาร 38 คณะมนุษยศาสตร์</p>
+                        <p class="news-desc">อบรมเชิงปฏิบัติการด้าน Automation, Workflow และ Cyber Security เพื่อยกระดับการบริหารองค์กรสู่ยุคดิจิทัล</p>
+                    </div>
+                </div> 
+
+                <div class="news-card">
+                    <div class="news-badge">ACTIVITY</div>
+                    <div class="news-image">
+                        <img src="homepage_pic/News Slides/5.jpg" alt="รูปกิจกรรม 5"> 
+                    </div>
+                    <div class="news-content">
+                        <h3>กิจกรรม "ภารกิจรักษ์โลก (Better World Quest)"</h3>
+                        <p><strong>ผู้จัด:</strong> หลักสูตรสารสนเทศศึกษา มศว</p>
+                        <p><strong>สถานที่:</strong> ห้องสมุดสิ่งแวดล้อม</p>
+                        <p class="news-desc">กิจกรรมเรียนรู้เรื่องสิ่งแวดล้อมและเป้าหมาย SDGs ผ่านสื่อเกมการ์ดแสนสนุก พร้อมส่งมอบสื่อการเรียนรู้ให้แก่ห้องสมุดเพื่อใช้ต่อยอดอย่างยั่งยืน</p>
+                    </div>
+                </div> 
+                
+            </div> 
+        </div> 
+        
+        <button class="news-btn next-news">❯</button>
+        
+    </div> 
+
+    <div id="newsModal" class="modal-overlay">
+        <div class="modal-box swu-modal">
+            <div class="modal-swu-header">
+                <div class="header-logo-container">
+                    <img src="homepage_pic/News Slides/Srinakharinwirot_Logo_EN_Color.png" alt="โลโก้ มศว" class="swu-logo-popup">
+                    <div class="swu-text-popup">
+                        มหาวิทยาลัยศรีนครินทรวิโรฒ<br>
+                        SRINAKHARINWIROT UNIVERSITY
+                    </div>
+                </div>
+                <span class="close-modal">&times;</span>
+            </div>
+            
+            <div class="modal-swu-body">
+                <div class="modal-left">
+                    <div class="modal-meta">
+                        <span id="modalDate" class="modal-date">📅 อัปเดตล่าสุด: 8 เม.ย. 2569</span>
+                    </div>
+                    <h2 id="modalTitle">หัวข้อข่าวจะมาอยู่ตรงนี้</h2>
+                    
+                    <div id="modalTextDetails">
+                        </div>
+                    <p id="modalTextBody" class="modal-text-content">
+                        </p>
+                    <div id="modalTextAuthor">
+                        </div>
+                </div>
+                <div class="modal-right">
+                    <img id="modalImage" src="" alt="รูปภาพข่าว">
+                    <button class="modal-zoom-btn">คลิกเพื่อดูภาพขยาย <i class="fa fa-search-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="modal-swu-footer">
+                <div class="divider"></div>
+                <div class="footer-row">
+                    <span id="modalFooterDate" class="footer-date">ประจำวันที่ 8 เม.ย. 2569</span>
+                    <button class="old-news-btn">ข่าวเก่ากว่า <i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- NEWS SLIDER END -->
+
+    <div class="divider"></div>
+
+    <!-- Teacher SLIDER -->
+    <h2 class="section-title" style="text-align: left; margin-left: 10%;">บุคลากร</h2>
+
+<section class="slider-container staff-slider" id="teacher">
+    <button class="slider-btn prev-btn" onclick="moveSlide('staff', -1)">&#10094;</button>
+    
+    <div class="slider-track" id="staff-track">
+        
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Dit-scaled.jpg" class="staff-img" alt="รูปอาจารย์ 1">
+                <div class="staff-info">
+                    <h4>อาจารย์ ดร. ดิษฐ์ สุทธิวงศ์</h4>
+                    <p>ตำแหน่ง : ประธานกรรมการบริหารหลักสูตร</p>
+                    <a href="homepage_pic/จารที่น่ารัก/dit.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Thiti-scaled.jpg" class="staff-img" alt="รูปอาจารย์ 2">
+                <div class="staff-info">
+                    <h4>อาจารย์ ดร. ฐิติ อติชาติชยากร</h4>
+                    <p>ตำแหน่งวิชาการ : เลขานุการหลักสูตร</p>
+                    <a href="https://sites.google.com/g.swu.ac.th/thitia" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Vipakorn-683x1024.jpg" class="staff-img" alt="รูปอาจารย์ 3">
+                <div class="staff-info">
+                    <h4>ผู้ช่วยศาสตราจารย์ ดร. วิภากร วัฒนสินธุ์</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/vipakorn.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src=" homepage_pic/จารที่น่ารัก/Chokthamrong.jpg" class="staff-img" alt="รูปอาจารย์ 4">
+                <div class="staff-info">
+                    <h4>อาจารย์ ดร. โชคธำรงค์ จงจอหอ</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/chokthamrong.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Chotima.jpg" class="staff-img" alt="รูปอาจารย์ 5">
+                <div class="staff-info">
+                    <h4>อาจารย์โชติมา วัฒนะ</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/chotima.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Dussadee-683x1024.jpg" class="staff-img" alt="รูปอาจารย์ 6">
+                <div class="staff-info">
+                    <h4>ผู้ช่วยศาสตราจารย์ ดร. ดุษฎี สีวังคำ</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/dussadee.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Sasipimol-683x1024.jpg" class="staff-img" alt="รูปอาจารย์ 7">
+                <div class="staff-info">
+                    <h4>ผู้ช่วยศาสตราจารย์ ดร. ศศิพิมล ประพินพงศกร</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/sasipimol.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="staff-card">
+                <img src="homepage_pic/จารที่น่ารัก/Sumattra-683x1024.jpg" class="staff-img" alt="รูปอาจารย์ 8">
+                <div class="staff-info">
+                    <h4>อาจารย์ ดร. ศุมรรษตรา แสนวา</h4>
+                    <a href="homepage_pic/จารที่น่ารัก/sumattra.pdf" target="_blank">
+                        <button class="btn-blue" style="width: max-content; padding: 4px 10px; font-size: 10px; cursor: pointer;">READ MORE</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div> 
+    
+    <button class="slider-btn next-btn" onclick="moveSlide('staff', 1)">&#10095;</button>
+    
+</section>
+    <!-- Teacher SLIDER END -->
+
+    <div class="divider"></div>
+
+    <!-- Calendar Section -->
+<div class="calendar-section-title">
+    <h2>มุมสาระน่ารู้ ✨</h2>
+    <p>ปฏิทินการศึกษาและลิงก์บริการสำหรับนิสิต</p>
+</div>
+
+<section class="calendar-section">
+
+    <!-- ฝั่งซ้าย: ปฏิทิน + legend -->
+    <div class="calendar-card">
+        <div class="custom-calendar">
+            <div class="calendar-header">
+                <button onclick="changeMonth(-1)">&#10094;</button>
+                <div id="month-year" class="calendar-month">เดือน ปี</div>
+                <button onclick="changeMonth(1)">&#10095;</button>
+            </div>
+            <div class="calendar-grid">
+                <div class="day-name">อา</div><div class="day-name">จ</div><div class="day-name">อ</div>
+                <div class="day-name">พ</div><div class="day-name">พฤ</div><div class="day-name">ศ</div><div class="day-name">ส</div>
+            </div>
+            <div id="calendar-days" class="calendar-grid"></div>
+        </div>
+
+        <div class="legend-grid">
+            <div class="legend-item">
+                <span class="legend-dot today-dot"></span>
+                <span>วันนี้</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#3d9e56;"></span>
+                <span>วันเปิด/ปิดภาคเรียน</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:var(--primary-red);"></span>
+                <span>ช่วงสอบกลางภาค / ปลายภาค</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:var(--primary-blue);"></span>
+                <span>กิจกรรมคณะ / Open House</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-dot" style="background:#aaa;"></span>
+                <span>วันหยุด / วันสำคัญ</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ตัวแบ่ง -->
+    <div class="calendar-divider"></div>
+
+    <!-- ฝั่งขวา: ลิงก์บริการ -->
+    <div class="links-card">
+        <h3 class="links-title">🔗 ลิงก์บริการนิสิต</h3>
+        <div class="document-links">
+            <a href="https://edservices.op.swu.ac.th/studyguide" target="_blank" class="doc-link">
+                <div class="doc-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="doc-text">
+                    <span class="doc-label">คู่มือนิสิต</span>
+                    <span class="doc-sub">Student Handbook</span>
+                </div>
+                <i class="fa-solid fa-arrow-right doc-arrow"></i>
+            </a>
+            <a href="https://lib.swu.ac.th/" target="_blank" class="doc-link">
+                <div class="doc-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="doc-text">
+                    <span class="doc-label">ระบบห้องสมุด</span>
+                    <span class="doc-sub">Library System</span>
+                </div>
+                <i class="fa-solid fa-arrow-right doc-arrow"></i>
+            </a>
+            <a href="https://academic.swu.ac.th/%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B9%E0%B8%95%E0%B8%A3/%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%A1%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%8C%E0%B9%82%E0%B8%AB%E0%B8%A5%E0%B8%94" target="_blank" class="doc-link">
+                <div class="doc-icon"><i class="fa-solid fa-file-arrow-down"></i></div>
+                <div class="doc-text">
+                    <span class="doc-label">แบบฟอร์มดาวน์โหลดเอกสาร</span>
+                    <span class="doc-sub">Document Forms</span>
+                </div>
+                <i class="fa-solid fa-arrow-right doc-arrow"></i>
+            </a>
+            <a href="https://edservices.op.swu.ac.th/certificate" target="_blank" class="doc-link">
+                <div class="doc-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="doc-text">
+                    <span class="doc-label">การขอเอกสารสำคัญทางการศึกษา</span>
+                    <span class="doc-sub">Academic Documents</span>
+                </div>
+                <i class="fa-solid fa-arrow-right doc-arrow"></i>
+            </a>
+        </div>
+    </div>
+
+</section>
+<!-- Calendar Section END -->
+<hr style="margin-top: 40px; margin-bottom: 0px; width: 80%; border: 0; border-top: 1px solid #e0e0e0;">
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>ข้อมูลในการติดต่อ</h3>
+            <div class="contact-details">
+                <p class="faculty-th">คณะมนุษยศาสตร์ มหาวิทยาลัยศรีนครินทรวิโรฒ</p>
+                <p class="faculty-en">Faculty of Humanities, Srinakharinwirot University</p>
+                
+                <ul class="contact-list">
+                    <li><i class="fas fa-university"></i> <span>114 ซอยสุขุมวิท 23 แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพ 10110</span></li>
+                    <li><i class="fas fa-phone-alt"></i> <span>0-2649-5000 ต่อ 16292</span></li>
+                    <li><i class="fas fa-fax"></i> <span>FAX. 0-2260-1914</span></li>
+                    <li><i class="fas fa-envelope"></i> <span>is@g.swu.ac.th</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="social-icons">
+            <a href="https://x.com/IS_SWU?s=20" target="_blank" title="ติดตามเราบน X">
+                <img src="homepage_pic/footer/X_logo.png" alt="X Logo">
+            </a>
+            <a href="https://www.facebook.com/isswuofficial" target="_blank" title="ติดตามเราบน Facebook">
+                <img src="homepage_pic/footer/facebook_icon.png" alt="Facebook Icon">
+            </a>
+            <a href="https://is.hu.swu.ac.th/" target="_blank" title="ติดตามเราบนเว็บไซต์หลักของสาขาวิชา">
+                <img src="homepage_pic/footer/home_icon.png" alt="เว็บไซต์หลักของสาขาวิชา">
+            </a>
+        </div>
+    </div>
+    
+    <hr class="footer-divider"> 
+    <div class="copyright">
+        © 2026 Information Studies - SWU. All rights reserved.
+    </div>
+</footer>
+<!-- Footer END -->
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>
+            เว็บไซต์นี้ใช้คุกกี้เพื่อเพิ่มประสิทธิภาพและประสบการณ์ที่ดีในการใช้งานเว็บไซต์ คุณสามารถเลือกยอมรับหรือปฏิเสธคุกกี้ได้ 
+            <a href="#" class="cookie-policy-link">อ่านนโยบายคุกกี้</a>
+        </p>
+        <div class="cookie-buttons">
+            <button id="accept-cookie" class="btn-accept">ยอมรับ</button>
+            <button id="decline-cookie" class="btn-decline">ปฏิเสธ</button>
+        </div>
+    </div>
+</div>
+<!-- Cookie Banner END -->
+
+    <script src="script.js"></script>
+</body>
+</html>
